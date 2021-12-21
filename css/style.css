@@ -35,6 +35,7 @@ a:active,
 a:focus {
   outline: none;
 }
+/* Typography */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
@@ -91,4 +92,18 @@ p {
     font-size: 4.5rem;
     color: #141414;
   }
+}
+/* Links */
+.links {
+  display: inline-block;
+  padding: 1rem 2.2rem;
+  text-transform: capitalize;
+}
+.link-primary {
+  background: var(--color-secondary);
+  color: var(--white-color);
+}
+.link-secondary {
+  background: #fefeff;
+  color: var(--color-secondary);
 }
