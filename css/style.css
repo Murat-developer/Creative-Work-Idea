@@ -107,3 +107,18 @@ p {
   background: #fefeff;
   color: var(--color-secondary);
 }
+/* Buttons */
+.btn {
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--white-color);
+}
+.btn-secondary {
+  background: var(--btn-color);
+  color: var(--white-color);
+}
