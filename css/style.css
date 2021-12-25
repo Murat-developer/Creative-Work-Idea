@@ -122,3 +122,11 @@ p {
   background: var(--btn-color);
   color: var(--white-color);
 }
+/* Icons */
+.icon {
+  width: 61px;
+  height: 75px;
+}
+.icon-primary {
+  fill: var(--white-color);
+}
