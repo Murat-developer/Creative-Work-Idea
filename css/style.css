@@ -3,6 +3,7 @@
   --btn-color: #151515;
   --color-secondary: #323232;
   --white-color: #fff;
+  --border-color: #ccc;
 }
 html {
   box-sizing: border-box;
@@ -137,4 +138,79 @@ p {
 }
 .list .list__item {
   color: var(--white-color);
+}
+/* Input Group */
+.input-group {
+  max-width: 570px;
+  padding: 1rem;
+}
+form {
+  width: 100%;
+}
+label {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+label:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  width: 7rem;
+  background: var(--color-primary);
+}
+input,
+textarea {
+  outline: none;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  padding: 1rem;
+}
+textarea {
+  resize: none;
+  height: 150px;
+}
+::placeholder {
+  font-size: 1.4rem;
+  opacity: 0.5;
+}
+.input-group__name {
+  margin-top: 3rem;
+}
+.input-group__name,
+.input-group__number,
+.input-group__email,
+.input-group__message {
+  margin-bottom: 2.5rem;
+}
+.input-group__btn {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 2.3rem 4.3rem;
+}
+@media screen and (min-width: 768px) {
+  label {
+    font-size: 4.5rem;
+  }
+  label:before {
+    width: 9rem;
+    background: var(--color-primary);
+  }
+  input,
+  textarea {
+    padding: 2rem;
+  }
+  ::placeholder {
+    font-size: 1.6rem;
+  }
+  .input-group__btn {
+    margin-top: 3rem;
+    padding: 3.4rem 7.5rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
 }
