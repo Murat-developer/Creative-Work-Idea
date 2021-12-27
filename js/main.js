@@ -6,7 +6,20 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".fa-chevron-right",
     prevEl: ".fa-chevron-left",
   },
-
-  mousewheel: true,
-  keyboard: true,
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 1,
+  //   },
+  //   414: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 1,
+  //   },
+  //   768: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 1,
+  //   },
+  // },
+  // mousewheel: true,
+  // keyboard: true,
 });
