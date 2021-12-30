@@ -37,7 +37,7 @@ a:active,
 a:focus {
   outline: none;
 }
-/* Typography */
+/* .Typography */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
@@ -95,44 +95,47 @@ p {
     color: #141414;
   }
 }
-/* Links */
+/* .Links */
 .links {
   display: inline-block;
   padding: 1rem 2.2rem;
   text-transform: capitalize;
 }
-.link-primary {
+.link--primary {
   background: var(--color-secondary);
   color: var(--white-color);
 }
-.link-secondary {
+.link--secondary {
   background: #fefeff;
   color: var(--color-secondary);
 }
-/* Buttons */
+/* .Buttons */
 .btn {
   border: 0;
   cursor: pointer;
   text-transform: uppercase;
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  white-space: nowrap;
+  margin: 1rem 0;
 }
-.btn-primary {
+.btn--primary {
   background: var(--color-primary);
   color: var(--white-color);
 }
-.btn-secondary {
+.btn--secondary {
   background: var(--btn-color);
   color: var(--white-color);
 }
-/* Icons */
+/* .Icons */
 .icon {
-  width: 61px;
-  height: 75px;
+  width: 70px;
+  height: 85px;
 }
-.icon-primary {
+.icon--primary {
   fill: var(--white-color);
 }
-/* List */
+/* .List */
 .list {
   background: var(--color-secondary);
 }
@@ -140,7 +143,7 @@ p {
   color: var(--white-color);
 }
 
-/* Features block  */
+/* .Features block  */
 
 @media screen and (min-width: 1024px) {
   .features-block .grid--1x3 {
@@ -148,7 +151,7 @@ p {
   }
 }
 
-/* Input Group */
+/* .Input Group */
 .input-group {
   max-width: 500px;
   padding: 2rem;
@@ -199,6 +202,8 @@ textarea {
   font-weight: bold;
   font-size: 1.4rem;
   padding: 2.3rem 4.3rem;
+  background-color: var(--color-secondary);
+  color: white;
 }
 @media screen and (min-width: 768px) {
   label {
@@ -217,20 +222,36 @@ textarea {
   }
   .input-group__btn {
     margin-top: 1rem;
-    padding: 3.4rem 7.5rem;
+    padding: 3rem 6rem;
     font-weight: bold;
     font-size: 1.8rem;
   }
 }
-
-/* Testimonial */
-.testimonial {
-  padding: 1rem;
-  max-width: 500px;
+/* .Block Input */
+@media screen and (min-width: 1024px) {
+  .block-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+  }
+  .block-input .grid--1x3 {
+    grid-template-columns: 50% 50%;
+  }
 }
 
+/* .Testimonial */
+.testimonial {
+  overflow: hidden;
+  padding: 1rem;
+  max-width: 500px;
+  width: 100%;
+}
+.swiper {
+  width: 100%;
+}
 .swiper-slide {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .slide {
   bottom: none;
@@ -238,17 +259,15 @@ textarea {
   background: var(--white-color);
   box-shadow: 0 0 8px 1px #ccce;
   position: relative;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 .swiper__sub {
-  margin-bottom: 3rem;
   text-align: center;
   font-size: 3rem;
-
   color: var(--color-secondary);
 }
 
-.icon {
+.slide__icon {
   display: inline-block;
   position: absolute;
   top: 20px;
@@ -323,7 +342,7 @@ textarea {
   .slide > p {
     margin-top: -1rem;
   }
-  .icon {
+  .slide__icon {
     font-size: 2.5rem;
     right: 30px;
     top: 30px;
@@ -331,15 +350,21 @@ textarea {
 }
 @media screen and (min-width: 1024px) {
   .testimonial {
-    transform: translateY(-8rem);
+    display: flex;
+    flex-flow: column nowrap;
+    max-height: 800px;
+    transform: translateY(-2rem);
+  }
+  .swiper__header {
+    flex: 2 0 170px;
   }
 }
-/* Container */
+/* .Container */
 .main-container {
   max-width: 1150px;
   margin: 0 auto;
 }
-/* Grids */
+/* .Grids */
 .grid {
   display: grid;
   justify-items: center;
@@ -355,4 +380,43 @@ textarea {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+/* .Card */
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+.slider-container {
+  overflow: hidden;
+}
+.slider-track {
+  display: flex;
+}
+.slider-item {
+  /* min-width: 300px */
+  transition: 0.4s;
+}
+.card {
+  max-width: 350px;
+  border: 1px solid rgba(187, 187, 187, 0.345);
+  padding: 2rem 3rem 3rem 3rem;
+  margin: 2rem; /* fixme */
+  transition: ease-in-out 0.4s;
+}
+.card:hover {
+  border: 1px solid #000;
+}
+.card__sub {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: var(--color-secondary);
+  padding: 0 4rem 0 0;
+}
+.card__description {
+  margin: 2rem 0 3rem 0;
+}
+.card__link {
+  display: flex;
+  justify-content: flex-end;
 }
