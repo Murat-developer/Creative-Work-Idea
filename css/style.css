@@ -363,13 +363,14 @@ textarea {
 .main-container {
   max-width: 1150px;
   margin: 0 auto;
+  padding: 0 auto;
 }
 /* .Grids */
 .grid {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-gap: 2rem;
+  gap: 2rem;
 }
 @media screen and (min-width: 768px) {
   .grid--1x2 {
@@ -381,37 +382,70 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* .Plan */
+.plan {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.plan__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.plan__heading {
+  text-transform: uppercase;
+  font-size: 3.4rem;
+  position: relative;
+}
+.plan__heading::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  bottom: -1rem;
+  left: 42%;
+  background: var(--color-primary);
+}
+@media screen and (min-width: 768px) {
+  .plan__header {
+    margin-bottom: 3rem;
+  }
+  .plan__heading {
+    font-size: 4rem;
+  }
+  .plan__heading::before {
+    left: 45.3%;
+    width: 70px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .plan__header {
+    margin-bottom: 4rem;
+  }
+  .plan__heading::before {
+    left: 46.5%;
+  }
+}
+
 /* .Card */
-.wrapper {
-  width: 1024px;
-  margin: 0 auto;
-}
-.slider-container {
-  overflow: hidden;
-}
-.slider-track {
-  display: flex;
-}
-.slider-item {
-  /* min-width: 300px */
-  transition: 0.4s;
+.card-container {
+  padding: 2rem;
 }
 .card {
   max-width: 350px;
   border: 1px solid rgba(187, 187, 187, 0.345);
   padding: 2rem 3rem 3rem 3rem;
-  margin: 2rem; /* fixme */
   transition: ease-in-out 0.4s;
 }
 .card:hover {
   border: 1px solid #000;
 }
 .card__sub {
+  width: 100px;
   margin-top: 1rem;
   font-size: 2.2rem;
   text-transform: capitalize;
   color: var(--color-secondary);
-  padding: 0 4rem 0 0;
+  /* padding: 0 12rem 0 0; */
 }
 .card__description {
   margin: 2rem 0 3rem 0;
