@@ -27,3 +27,9 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // .Media Block
+const collapsibles = document.querySelectorAll(".collapsible__container");
+collapsibles.forEach((item) =>
+  item.addEventListener("click", function () {
+    this.classList.toggle("collapsible--expanded");
+  })
+);
