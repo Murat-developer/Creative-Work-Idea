@@ -33,3 +33,9 @@ collapsibles.forEach((item) =>
     this.classList.toggle("collapsible--expanded");
   })
 );
+
+// .Menu Icon
+const menuIcon = document.querySelector(".menu-icon");
+menuIcon.addEventListener("click", function () {
+  this.classList.toggle("active");
+});
