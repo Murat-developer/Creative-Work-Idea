@@ -1,0 +1,24 @@
+{
+  "name": "creative-work-idea",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./html/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murod63/Creative-Work-Idea.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Murod63/Creative-Work-Idea/issues"
+  },
+  "homepage": "https://github.com/Murod63/Creative-Work-Idea#readme",
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
+}

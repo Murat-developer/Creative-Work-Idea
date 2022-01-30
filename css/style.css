@@ -54,7 +54,7 @@ h6 {
   margin-bottom: 1rem;
 }
 h1 {
-  color: #323232; /* fixme to white */
+  color: var(--white-color);
   font-size: 5rem;
 }
 h2,
@@ -84,7 +84,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 8rem;
+    font-size: 10rem;
   }
   h2,
   h3,
@@ -173,8 +173,8 @@ p {
   }
 }
 
+/* .Input Group */
 .input-group {
-  /* .Input Group */
   max-width: 500px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -250,6 +250,7 @@ textarea {
   }
 }
 /* .Block Input */
+
 @media screen and (min-width: 1024px) {
   .block-input {
     display: flex;
@@ -276,7 +277,7 @@ textarea {
   margin-top: 3rem;
 }
 .slide {
-  bottom: none;
+  bottom: 0;
   padding: 2rem;
   background: var(--white-color);
   box-shadow: 0 0 8px 1px #ccce;
@@ -481,10 +482,11 @@ textarea {
 /* .Features Block */
 .features {
   padding: 3rem 0;
-}
-.features {
   background: var(--color-secondary);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
+
 .features__header {
   display: flex;
   flex-flow: row nowrap;
@@ -585,6 +587,12 @@ textarea {
   left: 0;
   /* padding: 3.4rem 3.4rem 3.4rem 3.4rem; */
   background: var(--white-color);
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+.media__body:hover {
+  max-height: 100%;
+  opacity: 1;
 }
 .media__heading {
   font-size: 2rem;
@@ -692,6 +700,10 @@ textarea {
   }
 }
 /* .Showcase Block */
+.showcase {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
 .showcase__conatainer {
   position: relative;
 }
@@ -827,6 +839,7 @@ textarea {
 /* .Footer */
 .footer {
   background: var(--color-secondary);
+  margin-top: 5rem;
 }
 .footer__container {
   padding: 3rem 1rem;
@@ -949,7 +962,14 @@ textarea {
 /* .Nav Bar */
 
 .header {
-  background: var(--color-secondary);
+  margin-bottom: 5rem;
+  width: 100vw;
+  min-height: 100vh;
+  background: url(../img/Hero@2x.png) no-repeat center center / cover;
+}
+
+.header__container {
+  background: rgba(29, 29, 29, 0.44);
 }
 
 .header__nav {
@@ -972,7 +992,30 @@ textarea {
   background: none;
   cursor: pointer;
 }
-.menu-icon span {
+
+.menu-icon span:nth-child(1) {
+  width: 20px;
+  height: 4px;
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+  transform-origin: 0 0;
+  transition: 0.4s;
+  border-radius: 6px;
+  background: var(--white-color);
+}
+.menu-icon span:nth-child(2) {
+  width: 25px;
+  height: 4px;
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+  transform-origin: 0 0;
+  transition: 0.4s;
+  border-radius: 6px;
+  background: var(--white-color);
+}
+.menu-icon span:nth-child(3) {
   width: 33px;
   height: 4px;
   display: block;
@@ -984,10 +1027,11 @@ textarea {
   background: var(--white-color);
 }
 .menu-icon:hover span:nth-child(2) {
-  transform: translateX(-10px);
+  transform: translateX(9px);
   background: var(--btn-color);
 }
 .menu-icon.active span:nth-child(1) {
+  width: 33px;
   transform: translate(0px, -2px) rotate(45deg);
 }
 .menu-icon.active span:nth-child(2) {
@@ -1042,5 +1086,75 @@ textarea {
   }
   .header__item {
     padding: 1.2rem 3.5rem;
+  }
+}
+/* .Hero */
+
+.hero__container {
+  margin-top: 5rem;
+}
+
+.hero__header {
+  display: inline-block;
+  width: 90%;
+}
+.hero__paragraph {
+  color: var(--white-color);
+  margin-bottom: 3rem;
+}
+
+.hero__link-primary,
+.hero__link-secondary {
+  display: inline-block;
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+  width: 70%;
+  text-align: center;
+}
+.hero__link-primary {
+  background: var(--color-primary);
+  color: var(--white-color);
+}
+.hero__link-secondary {
+  background: var(--white-color);
+  color: var(--color-secondary);
+}
+@media screen and (min-width: 400px) {
+  .hero__container {
+    margin: 0;
+    position: relative;
+    top: -50%;
+    transform: translateY(50%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .hero__header,
+  .hero__paragraph {
+    display: block;
+  }
+  .hero__header {
+    max-width: 600px;
+    margin-bottom: 3rem;
+  }
+  .hero__paragraph {
+    max-width: 450px;
+    margin-bottom: 4rem;
+  }
+  .hero__links {
+    margin-top: 3rem;
+  }
+  .hero__link-secondary {
+    margin-left: 2rem;
+  }
+  .hero__link-primary,
+  .hero__link-secondary {
+    display: inline-block;
+    width: 230px;
+    padding: 2rem 3rem;
   }
 }

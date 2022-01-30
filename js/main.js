@@ -22,7 +22,7 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 10,
     },
   },
-  mousewheel: true,
+  mousewheel: false,
   keyboard: true,
 });
 

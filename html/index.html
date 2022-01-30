@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <!-- page icon -->
-    <link rel="icon" href="../img/favicon.svg" sizes="32x32" type="x-icon" />
+    <link rel="icon" href="../img/favicon.svg" sizes="32x32" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- ico font -->
-    <link rel="stylesheet" href="../css/icofont.min.css" />
+    <!-- <link rel="stylesheet" href="../css/icofont.min.css" /> -->
     <!-- swiper js -->
     <link
       rel="stylesheet"
@@ -30,9 +30,10 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- .Nav Bar -->
     <header class="header">
-      <div class="header__container main-container">
-        <nav class="header__nav collapsible__container">
+      <div class="header__container">
+        <nav class="header__nav collapsible__container main-container">
           <div class="logo header__logo">
             <a href="index.html" class="logo__item">hightech</a>
           </div>
@@ -41,7 +42,7 @@
             <span></span>
             <span></span>
           </div>
-          <ul class="list header__list collapsible__content">
+          <ul class="header__list collapsible__content">
             <li class="header__item"><a href="#">home</a></li>
             <li class="header__item"><a href="#">about</a></li>
             <li class="header__item"><a href="#">what we do</a></li>
@@ -52,7 +53,518 @@
           <span class="header__search icofont-search"></span>
         </nav>
       </div>
+      <section class="hero main-container">
+        <div class="hero__container">
+          <h1 class="hero__header">Creative Work Idea</h1>
+          <p class="hero__paragraph">
+            here are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration
+          </p>
+          <div class="hero__links">
+            <a href="#" class="hero__link-primary">About Company</a>
+            <a href="#" class="hero__link-secondary">Contact Us</a>
+          </div>
+        </div>
+      </section>
     </header>
+    <!-- .Plan -->
+    <section class="plan main-container">
+      <div class="plan__header">
+        <h4 class="plan__heading">what we do</h4>
+      </div>
+      <div class="card-container">
+        <div class="grid grid--1x3">
+          <div class="card">
+            <svg class="icon card__icon">
+              <use xlink:href="../img/sprite.svg#website"></use>
+            </svg>
+            <h3 class="card__sub">website development</h3>
+            <p class="card__description">
+              many variations of passages of Lorem Ipsum available, but the
+              majority have suffered alteration in some form, by injected
+              humour, or randomised words which
+            </p>
+            <div class="card__link">
+              <a href="#" class="links link--primary">read more</a>
+            </div>
+          </div>
+          <div class="card">
+            <svg class="icon card__icon">
+              <use xlink:href="../img/sprite.svg#app"></use>
+            </svg>
+            <h3 class="card__sub">App development</h3>
+            <p class="card__description">
+              many variations of passages of Lorem Ipsum available, but the
+              majority have suffered alteration in some form, by injected
+              humour, or randomised words which
+            </p>
+            <div class="card__link">
+              <a href="#" class="links link--primary">read more</a>
+            </div>
+          </div>
+          <div class="card">
+            <svg class="icon card__icon">
+              <use xlink:href="../img/sprite.svg#design"></use>
+            </svg>
+            <h3 class="card__sub">website design</h3>
+            <p class="card__description">
+              many variations of passages of Lorem Ipsum available, but the
+              majority have suffered alteration in some form, by injected
+              humour, or randomised words which
+            </p>
+            <div class="card__link">
+              <a href="#" class="links link--primary">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__chevron">
+        <span class="fas fa-chevron-left btn-prev"></span>
+        <span class="fas fa-chevron-right btn-next"></span>
+      </div>
+    </section>
+    <!-- .Showcase Block -->
+    <section class="showcase">
+      <div class="showcase__conatainer">
+        <div class="showcase__content">
+          <div class="showcase__header">
+            <h4 class="showcase__name">about company</h4>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have
+            </p>
+          </div>
+        </div>
+        <div class="pulsing-icon">
+          <span class="fas fa-play pulsing__play"></span>
+        </div>
+        <div class="showcase__img">
+          <picture>
+            <source
+              srcset="../img/showcase@1x.webp 1x, ../img/showcase@2x.webp 2x"
+              media="(max-width:1024px)"
+              type="image/webp"
+            />
+            <source
+              srcset="../img/showcase@1x.png 1x, ../img/showcase@2x.png 2x"
+              media="(max-width:1200px)"
+              type="image/png"
+            />
+            <img src="../img/showcase@3x.png " alt="Happy customer" />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <!-- .Media Block -->
+    <section class="media">
+      <div class="media__header main-container">
+        <h3 class="media__name">we have done projects</h3>
+      </div>
+      <div class="media-container main-container">
+        <div class="media__content">
+          <div class="media__img">
+            <img src="../img/media-4.png" alt="Media pictures" />
+          </div>
+          <div class="media__body">
+            <div class="media__icon">
+              <span class="fas fa-search media__search"></span>
+              <span class="fas fa-link media__link"></span>
+            </div>
+            <h3 class="media__heading">Carrency Dashbord</h3>
+            <p class="media__title">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable
+            </p>
+          </div>
+        </div>
+        <div class="media__content">
+          <div class="media__img">
+            <img src="../img/media-2.png" alt="Media pictures" />
+          </div>
+          <div class="media__body">
+            <div class="media__icon">
+              <span class="fas fa-search media__search"></span>
+              <span class="fas fa-link media__link"></span>
+            </div>
+            <h3 class="media__heading">Carrency Dashbord</h3>
+            <p class="media__title">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable
+            </p>
+          </div>
+        </div>
+        <div class="media__content">
+          <div class="media__img">
+            <img src="../img/media-3.png" alt="Media pictures" />
+          </div>
+          <div class="media__body">
+            <div class="media__icon">
+              <span class="fas fa-search media__search"></span>
+              <span class="fas fa-link media__link"></span>
+            </div>
+            <h3 class="media__heading">Carrency Dashbord</h3>
+            <p class="media__title">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable
+            </p>
+          </div>
+        </div>
+        <div class="media__content">
+          <div class="media__img">
+            <img src="../img/media-4.png" alt="Media pictures" />
+          </div>
+          <div class="media__body">
+            <div class="media__icon">
+              <span class="fas fa-search media__search"></span>
+              <span class="fas fa-link media__link"></span>
+            </div>
+            <h3 class="media__heading">Carrency Dashbord</h3>
+            <p class="media__title">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="media-btn">
+        <a href="#" class="btn media-btn__link">see more</a>
+      </div>
+    </section>
+    <!-- .Features Block -->
+    <section class="features">
+      <div class="main-container">
+        <div class="features__header">
+          <h4 class="features__heading">why choose us</h4>
+        </div>
+        <div class="features__container">
+          <div class="grid grid--1x3">
+            <div class="features__card">
+              <svg class="icon features__icon">
+                <use xlink:href="../img/sprite.svg#web"></use>
+              </svg>
+              <h5 class="features__title">project done</h5>
+              <h6 class="features__price">1000+</h6>
+              <a href="#" class="btn features__btn">read more</a>
+            </div>
+            <div class="features__card">
+              <svg class="icon features__icon">
+                <use xlink:href="../img/sprite.svg#users"></use>
+              </svg>
+              <h5 class="features__title">happy client</h5>
+              <h6 class="features__price">900+</h6>
+              <a href="#" class="btn features__btn">read more</a>
+            </div>
+            <div class="features__card">
+              <svg class="icon features__icon">
+                <use xlink:href="../img/sprite.svg#award"></use>
+              </svg>
+              <h5 class="features__title">awards</h5>
+              <h6 class="features__price">100+</h6>
+              <a href="#" class="btn features__btn">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .Input Group -->
+    <div class="block-input main-container">
+      <div class="grid grid--1x3">
+        <div class="input-group">
+          <form action="index.html">
+            <label for="name">Get in touch</label>
+            <div class="input-group__name">
+              <input type="text" name="name" id="name" placeholder="Name" />
+            </div>
+            <div class="input-group__number">
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <div class="input-group__email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="input-group__message">
+              <textarea
+                rows="4"
+                cols="30"
+                placeholder="Message"
+                maxlength="500"
+              ></textarea>
+            </div>
+            <button class="btn btn-primary input-group__btn" type="submit">
+              send now
+            </button>
+          </form>
+        </div>
+        <!-- .Testimonial -->
+        <section class="testimonial">
+          <header class="swiper__header">
+            <h4 class="swiper__sub">What Says Clients</h4>
+          </header>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide">
+                  <span class="slide__icon icofont-quote-left"></span>
+                  <div class="user">
+                    <img
+                      src="../img/testimonial-img1.png "
+                      alt="A happy smilling customer"
+                      class="swiper__img"
+                    />
+                    <div class="user__info">
+                      <h3 class="user__name">james smith</h3>
+                      <div class="stars">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="far fa-star-half-alt"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slide__title">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem IpsumIt is a long
+                    established fact that a reader will be distracted by the
+                    readable content of a page when looking at its layout. The
+                    point of using Lorem Ipsum
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <span class="slide__icon icofont-quote-left"></span>
+                  <div class="user">
+                    <img
+                      src="../img/testimonial-img2.jpg"
+                      alt="A happy smilling customer"
+                      class="swiper__img"
+                    />
+                    <div class="user__info">
+                      <h3 class="user__name">james smith</h3>
+                      <div class="stars">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="far fa-star-half-alt"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slide_title">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem IpsumIt is a long
+                    established fact that a reader will be distracted by the
+                    readable content of a page when looking at its layout. The
+                    point of using Lorem Ipsum
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <span class="slide__icon icofont-quote-left"></span>
+                  <div class="user">
+                    <img
+                      src="../img/testimonial-img3.jpg "
+                      alt="A happy smilling customer"
+                      class="swiper__img"
+                    />
+                    <div class="user__info">
+                      <h3 class="user__name">james smith</h3>
+                      <div class="stars">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="far fa-star-half-alt"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slide_title">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem IpsumIt is a long
+                    established fact that a reader will be distracted by the
+                    readable content of a page when looking at its layout. The
+                    point of using Lorem Ipsum
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <span class="slide__icon icofont-quote-left"></span>
+                  <div class="user">
+                    <img
+                      src="../img/testimonial-img4.jpg "
+                      alt="A happy smilling customer"
+                      class="swiper__img"
+                    />
+                    <div class="user__info">
+                      <h3 class="user__name">james smith</h3>
+                      <div class="stars">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="far fa-star-half-alt"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slide_title">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem IpsumIt is a long
+                    established fact that a reader will be distracted by the
+                    readable content of a page when looking at its layout. The
+                    point of using Lorem Ipsum
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <span class="slide__icon icofont-quote-left"></span>
+                  <div class="user">
+                    <img
+                      src="../img/testimonial-img5.jpg"
+                      alt="A happy smilling customer"
+                      class="swiper__img"
+                    />
+                    <div class="user__info">
+                      <h3 class="user__name">james smith</h3>
+                      <div class="stars">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="far fa-star-half-alt"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slide_title">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem IpsumIt is a long
+                    established fact that a reader will be distracted by the
+                    readable content of a page when looking at its layout. The
+                    point of using Lorem Ipsum
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container__chevron">
+              <span class="fas fa-chevron-left"></span>
+              <span class="fas fa-chevron-right"></span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- .Footer Block -->
+    <footer class="footer">
+      <div class="footer__container main-container">
+        <div class="footer__header">
+          <div class="logo footer__logo">
+            <a href="index.html" class="logo__item">hightech</a>
+          </div>
+          <form class="footer__input">
+            <input class="input" type="text" placeholder="Enter your email" />
+            <button type="submit" class="btn footer__btn">subscribe now</button>
+          </form>
+        </div>
+        <div class="collapsible-wrapper">
+          <div class="collapsible__container collapsible--expanded">
+            <div class="collapsible__header">
+              <h6 class="collapsible__collapse">useful link</h6>
+            </div>
+            <div class="collapsible__content">
+              <a href="#" class="collapsible__item">home</a
+              ><a href="#" class="collapsible__item">about</a
+              ><a href="#" class="collapsible__item">what we do</a
+              ><a href="#" class="collapsible__item">portfolio</a
+              ><a href="#" class="collapsible__item">why choose us</a
+              ><a href="#" class="collapsible__item">contact us</a>
+            </div>
+          </div>
+          <div class="collapsible__container collapsible--expanded">
+            <div class="collapsible__header">
+              <h6 class="collapsible__collapse">news</h6>
+            </div>
+            <div class="collapsible__content">
+              <a href="#" class="collapsible__item">home</a
+              ><a href="#" class="collapsible__item">about</a
+              ><a href="#" class="collapsible__item">what we do</a
+              ><a href="#" class="collapsible__item">portfolio</a
+              ><a href="#" class="collapsible__item">why choose us</a
+              ><a href="#" class="collapsible__item">contact us</a>
+            </div>
+          </div>
+          <div class="collapsible__container collapsible--expanded">
+            <div class="collapsible__header">
+              <h6 class="collapsible__collapse">company</h6>
+            </div>
+            <div class="collapsible__content">
+              <a href="#" class="collapsible__item">home</a
+              ><a href="#" class="collapsible__item">about</a
+              ><a href="#" class="collapsible__item">what we do</a
+              ><a href="#" class="collapsible__item">portfolio</a
+              ><a href="#" class="collapsible__item">why choose us</a
+              ><a href="#" class="collapsible__item">contact us</a>
+            </div>
+          </div>
+          <div class="collapsible__container collapsible--expanded">
+            <div class="collapsible__header">
+              <h6 class="collapsible__collapse">contact us</h6>
+            </div>
+            <div class="collapsible__content">
+              <a href="#" class="collapsible__item">
+                <span class="ico--font icofont-location-pin"> location</span>
+              </a>
+              <a href="#" class="collapsible__item">
+                <span class="ico--font icofont-ui-call">
+                  call +01234567890</span
+                >
+              </a>
+              <a href="#" class="collapsible__item">
+                <span class="ico--font icofont-email"> demo@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom__container main-container">
+          <div class="footer__copyright">&copy; Copyright 2022</div>
+          <div class="footer__social">
+            <span class="fab fa-facebook"></span>
+            <span class="fab fa-twitter"></span>
+            <span class="fab fa-linkedin"></span>
+            <span class="fab fa-instagram"></span>
+            <span class="fab fa-youtube"></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>
   </body>
